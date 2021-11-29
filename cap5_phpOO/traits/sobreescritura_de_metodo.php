@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Un modo definido en una clase, sobreescribe un método (igual nombre) definido 
- * en un trait, no importa que tengan una signatura diferente.
+ * Un método definido en una clase, sobreescribe un método (igual nombre) definido 
+ * en un trait, no importa que tengan una signatura o visibilidad diferente.
  */
 error_reporting(E_ALL);
 /*
@@ -14,37 +14,10 @@ trait A {
 
     private $privada = "Var privada del trait A";
 
-    public function mimetodo() {
+    public function mimetodo(string $s) {
         echo "Trait A";
     }
 
-}
-
-trait B {
-
-    use A;
-
-    private $privada = "Var privada del trait A";
-    protected $protegida = "Variable protegida";
-
-//    public function mimetodo() {
-//        echo "Trait B";
-//    }
-}
-
-interface interf2 {
-
-    function metodo1(int $a);
-}
-
-interface interf3 {
-
-    function metodo2(int $a);
-}
-
-interface interf1 extends interf2, interf3 {
-
-    function metodo1(int $b);
 }
 
 /**
@@ -52,22 +25,13 @@ interface interf1 extends interf2, interf3 {
  *
  * @author randion
  */
-class ProbandoTraits implements interf1 {
+class ProbandoTraits {
 
-    use B;
+    use A;
 
-    function metodo1($b) {
-        
+    function mimetodo(int $b) {
+        echo "Método de la clase";
     }
-
-    function metodo2($b) {
-        
-    }
-
-//    public function mimetodo(int $A = 1, string $X = 'si') {
-//        echo "metodo clase A: A vale $A y X vale $X";
-//    }
-
 }
 
 $o = new ProbandoTraits();

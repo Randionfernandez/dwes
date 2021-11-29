@@ -2,27 +2,39 @@
 
 error_reporting(E_ALL);
 /*
-  Ejemplos de uso de traits
+ * Ejemplos de uso de traits
  * 
+ * Traits no pueden tener constantes.
+ * 
+ * La clausula 'use' equivale a un 'include' en cuanto al ámbito de los
+ * métodos y variables protected y private.
+ * 
+ * Una clase que incluya un trait tiene el mismo efecto que si se copiase el 
+ * trait dentro de la clase (metodos y variables).
  */
 
 trait A {
 
-    public $contador = 0;
+//    public const PI = 3.1416;   //  Fatal error
+//    define(PI, 3.1416);   //  Fatal error
+    private $a = "Luís";
 
-    public function decirHola() {
-        $this->contador = ++$this->contador;
-        echo "Saludando Hola<br/>";
+    private function decirHola($name) {
+        echo "Saludando a $name<br/>";
     }
 
 }
 
 trait B {
 
-    private $privada = "Variable privada";
-    protected $protegida = "Variable protegida";
+    use A;
+
+    function __construct() {
+        $this->decirHola('Luis');
+    }
 
     public function decirAdios() {
+        $this->decirHola('Carlos');
         echo "Despidiéndome: Adiós<br/>";
     }
 
@@ -34,28 +46,17 @@ trait B {
  * @author randion
  */
 class ProbandoTraits {
-
-    use A,
-        B;
-
-    public function __construct() {
-        $this->decirHola();
-    }
+    const NAME = 'Lourdes';
     
-    function privada() {
-        echo "<br/>Acceso a la variable privada " . $this->privada;
-    }
-    
-    function protegida() {
-        echo "<br/>Acceso a la variable protegida " . $this->protegida;
-    }
+    use B;
+
+//    public function __construct() {
+//        $this->decirHola($this->a);
+//    }
 
 }
 
 $o = new ProbandoTraits();
 
-//$o->decirHola();
+//$o->decirHola();   // Error fatal
 $o->decirAdios();
-//echo "<br/>La variable es privada:  $o->privada()";
-//echo "<br/>La variable es protegida: " . $o->protegida();
-//echo "Contador vale: $o->contador";

@@ -48,7 +48,7 @@ Mejorar el tratamiento de errores.
             <h3>Escoge dos archivos</h3>
 
             <label for = "archivoSeleccionado1">Seleccione archivo: </label>
-            <input type = "file" name = "archivoSeleccionado1" id = "archivoSeleccionado1" value = "" />
+            <input type = "file" name = "archivoSeleccionado1[]" id = "archivoSeleccionado1" multiple value = "" />
 
             <label for = "archivoSeleccionado2"><br/>Seleccione archivo: </label>
             <input type = "file" name = "archivoSeleccionado2" id = "archivoSeleccionado2" value = "" />
