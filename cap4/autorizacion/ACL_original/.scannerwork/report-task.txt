@@ -1,0 +1,6 @@
+projectKey=ACL_org_key
+serverUrl=http://localhost:9000
+serverVersion=6.7.0.33306
+dashboardUrl=http://localhost:9000/dashboard/index/ACL_org_key
+ceTaskId=AWCJslZCZ6AtrZ00l3D2
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWCJslZCZ6AtrZ00l3D2

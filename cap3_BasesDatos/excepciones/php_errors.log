@@ -1,0 +1,139 @@
+2017-11-23 15:04:58 - Warning2017-11-23 15:07:55 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+
+2017-11-23 15:09:32 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+
+2017-11-23 15:14:06 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+
+2017-11-23 15:14:07 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+
+2017-11-23 15:14:07 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+
+2017-11-23 15:14:08 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+
+2017-11-23 16:39:47 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+2017-11-23 16:39:50 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+2017-11-23 16:39:50 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+2017-11-23 16:39:51 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+2017-11-23 16:39:51 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+2017-11-23 16:39:51 - Warning: calcWidgestPerDay(): El total de días no puede ser cero en /var/www/dwes/cap3_BasesDatos/excepciones/paranoidHandler.php línea 13
+Variables:
+Array
+(
+    [total_widgets] => 10
+    [total_days] => 0
+)
+
+[29-Nov-2017 15:37:43 Europe/Berlin] Se ha producido el error 2 Division by zero<br/> /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+[29-Nov-2017 15:37:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39
+[29-Nov-2017 15:39:10 Europe/Berlin] Se ha producido el error 2 Division by zero
+> /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+[29-Nov-2017 15:39:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39
+[29-Nov-2017 15:39:51 Europe/Berlin] Se ha producido el error 2 Division by zero
+ /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+[29-Nov-2017 15:39:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39
+[29-Nov-2017 15:40:23 Europe/Berlin] Se ha producido el error 2 Division by zero
+ /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+
+[29-Nov-2017 15:40:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39
+[29-Nov-2017 15:40:42 Europe/Berlin] Se ha producido el error 2 Division by zero
+ /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+
+[29-Nov-2017 15:40:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39
+[29-Nov-2017 15:41:24 Europe/Berlin] 
+Se ha producido el error 2 Division by zero
+ /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+
+[29-Nov-2017 15:41:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39
+[29-Nov-2017 15:41:54 Europe/Berlin] 
+Se ha producido el error 2 Division by zero
+ /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php línea 24
+
+[29-Nov-2017 15:41:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function carajete() in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php:39
+Stack trace:
+#0 {main}
+  thrown in /var/www/dwes/cap3_BasesDatos/excepciones/divisionByZero.php on line 39

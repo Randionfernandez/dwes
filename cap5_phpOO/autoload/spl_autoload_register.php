@@ -1,8 +1,10 @@
 <?php
 
-function __autoload($class) {
-    
-}
+//function __autoload($class) {
+//    
+//}
+
+// La función __autoload() no está soportada a partir de PHP 8.0 ->'Fatal error'
 
 function my_loader($nomclase) {
     if (file_exists("clases/$nomclase.php"))
@@ -12,7 +14,6 @@ function my_loader($nomclase) {
 function your_loader($nomclase) {
     include "clases2/$nomclase.php";
 }
-
 
 var_dump(spl_autoload_functions());
 echo '<br/>';

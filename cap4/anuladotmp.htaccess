@@ -1,0 +1,5 @@
+AuthName "Contenido restringido"
+AuthType Basic
+AuthUserFile /var/www/dwes/cap3/users
+require valid-user
+

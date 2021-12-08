@@ -13,29 +13,26 @@ Probar con las funciones definidas en la clase y en la subclase.
     </head>
     <body>
         <?php
-// La función __autoload() no está soportada a partir de PHP 8.0 ->'Fatal error'
-        function __autoload($clase) {
-            echo "<br/>Activando autoload";
-        }
 
         class Padre {
 
-            private $privada = 3;
+            protected $privada = 3;
 
             // No se puede declarar dinámicamente una variable static.
             // Las variables no static añadidas dinámicamente solo pertenecen al objeto.
-            // ¿Se pueden crear dinámicamente variable protegidas o privadas? ¿Cómo?.
+            // ¿Se pueden crear dinámicamente variables protegidas o privadas? ¿Cómo?.
 
             function __get($var) {
-                echo "<br/>__get: La variable no existe " . $this->$var;
+                echo "<br/>Padre::__get: La variable {$var} es invisible en este contexto.";
                 return $this->$var;
             }
 
-            function __set($var, $value) {
-                if (isset($this->{$var})) {
-                    return $this->{$var};
+            function __set($nom, $value) {
+                if (isset($this->$nom)) {
+                    return $this->$nom;
                 }
-                echo "<p>__set: La variable no exite y no se puede asignar";
+//                $this->$nom= $value;  // Esto permitiría agregar variables dinámicamente
+                echo "<p>Padre::__set: La variable '$nom' no existe y no se puede asignar";
             }
 
         }
@@ -43,17 +40,19 @@ Probar con las funciones definidas en la clase y en la subclase.
         class Hijo extends Padre {
 
             function __get($nom) {
-                echo "Hola mundo";
+                if (isset($this->$nom))
+                    return $this->$nom;
+                echo "Hijo::_get, La variable '$nom' es invisible en este contexto";
             }
 
         }
 
         $obj = new Hijo();
-        @$prueba = $obj->privada;
-        @$obj->noexiste = 7;
+        $prueba = $obj->privada;
+        $obj->noexiste = 7;
 
-        //echo "<br/>El valor de noexiste es: " . $obj->privada;
-        //$obj2 = new NoClase;
+        var_dump($prueba);
+        var_dump($obj);
         echo "<p>Fin</p>"
         ?>
 
