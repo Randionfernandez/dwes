@@ -26,14 +26,14 @@ Declarando funciones mágicas para atributos y métodos invisibles
             }
 
             function __set($name, $valor) {
-                $this->$name = $valor;
+                $this->name = $valor;
                 echo "<br>__set--Configurando un atributo invisible: $name = $valor";
             }
 
             function __call($f, $arg) {
                 echo "<br/>Llamando al método invisible. $f";
             }
-            
+
             static function __callStatic($f, $arg) {
                 echo "<br/>El método estático<b> $f </b>no existe";
             }
